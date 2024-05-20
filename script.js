@@ -1,5 +1,4 @@
 const day = (new Date().getDay() + 6) % 7
-console.log(day)
 
 const lista = [
     {
@@ -54,6 +53,5 @@ let maior = Math.max(...quantidade)
 graph.forEach((e, i) => {
     e.style.height = ((quantidade[i] * 100) / maior).toFixed() - 10 + "%";
     e.style.height <= 1 ? e.style.height = "3%" : ''
-    console.log(e.style.height)
 })
 

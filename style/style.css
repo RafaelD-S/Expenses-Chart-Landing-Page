@@ -111,7 +111,7 @@ main .chart {
     opacity: .9;
     z-index: +1;
 }
-.graph:hover span {
+.graph:hover .daily-value {
     opacity: 1;
 }
 footer {
