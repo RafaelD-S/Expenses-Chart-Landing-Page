@@ -34,7 +34,7 @@ const lista = [
 let total = document.querySelector("h3")
 const dia = document.querySelectorAll(".chart p")
 const graph = document.querySelectorAll(".graph")
-const values = document.querySelectorAll(".graph span")
+const values = document.querySelectorAll(".daily-value")
 quantidade = []
 
 lista.forEach((e, i) => {
