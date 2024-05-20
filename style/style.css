@@ -1,0 +1,101 @@
+:root {
+    --Soft-red: #ec775f;
+    --Cyan: #76b5bc;
+    --Dark-brown: #382314;
+    --Medium-brown: #93867b;
+    --Cream: #f8e9dd;
+    --Very-pale-orange: #fff4f0;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1, h2, h3, h4 {
+    line-height: 1;
+}
+body {
+    background-color: var(--Very-pale-orange);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'DM sans';
+    padding: 1rem;
+}
+article {
+    display: flex;
+    flex-direction: column;
+    max-width: 30rem;
+    width: 100%;
+    gap: 1rem;
+}
+header {
+    background-color: var(--Soft-red);
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    color: var(--Very-pale-orange);
+    border-radius: 12px;
+}
+header p {
+    color: var(--Very-pale-orange);
+    opacity: .7;
+    font-size: 1rem;
+}
+h2 {
+    font-weight: 600;
+}
+main {
+    display: grid;
+    gap: 2rem;
+    background-color: #fff;
+    padding: 2.5rem 1.5rem;
+    border-radius: 12px;
+}
+main .chart {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    height: 30vh;
+}
+.graph {
+    height: 100%;
+    background-color: var(--Soft-red);
+    border-radius: 4px;
+}
+h1 {
+    font-size: 1.8rem;
+    color: var(--Dark-brown);
+}
+.chart > div {
+    display: flex;
+    gap: .75rem;
+    flex-direction: column;
+    justify-content: end;
+    flex-basis: 10%;
+    text-align: center;
+}
+p {
+    color: var(--Medium-brown);
+    font-weight: 500;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    border-top: 1px solid var(--Cream);
+}
+footer h3 {
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+section {
+    display: grid;
+    gap: .4rem;
+}
+.percentage {
+    text-align: end;
+}
