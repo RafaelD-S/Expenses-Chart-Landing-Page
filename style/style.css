@@ -14,6 +14,17 @@
 h1, h2, h3, h4 {
     line-height: 1;
 }
+h1 {
+    font-size: 1.8rem;
+    color: var(--Dark-brown);
+}
+h2 {
+    font-weight: 600;
+}
+h3 {
+    font-size: 2.25rem;
+    font-weight: 700;
+}
 body {
     background-color: var(--Very-pale-orange);
     height: 100vh;
@@ -23,6 +34,10 @@ body {
     font-size: 18px;
     font-family: 'DM sans';
     padding: 1rem;
+}
+section {
+    display: grid;
+    gap: .4rem;
 }
 article {
     display: flex;
@@ -44,9 +59,6 @@ header p {
     opacity: .7;
     font-size: 1rem;
 }
-h2 {
-    font-weight: 600;
-}
 main {
     display: grid;
     gap: 2rem;
@@ -64,10 +76,9 @@ main .chart {
     height: 100%;
     background-color: var(--Soft-red);
     border-radius: 4px;
-}
-h1 {
-    font-size: 1.8rem;
-    color: var(--Dark-brown);
+    position: relative;
+    cursor: pointer;
+    z-index: 0;
 }
 .chart > div {
     display: flex;
@@ -77,9 +88,31 @@ h1 {
     flex-basis: 10%;
     text-align: center;
 }
-p {
+.chart p {
     color: var(--Medium-brown);
     font-weight: 500;
+}
+.chart span {
+    background-color: var(--Dark-brown);
+    color: var(--Very-pale-orange);
+    position: absolute;
+    padding: .5rem;
+    border-radius: 4px;
+    width: fit-content;
+    left: -1rem;
+    right: -1rem;
+    margin: auto;
+    bottom: calc(100% + .5rem);
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: 0;
+}
+.graph:hover {
+    opacity: .9;
+    z-index: +1;
+}
+.graph:hover span {
+    opacity: 1;
 }
 footer {
     display: flex;
@@ -87,14 +120,6 @@ footer {
     align-items: center;
     padding-top: 2rem;
     border-top: 1px solid var(--Cream);
-}
-footer h3 {
-    font-size: 2.25rem;
-    font-weight: 700;
-}
-section {
-    display: grid;
-    gap: .4rem;
 }
 .percentage {
     text-align: end;

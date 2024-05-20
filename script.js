@@ -34,7 +34,12 @@ const lista = [
 let total = document.querySelector("h3")
 const dia = document.querySelectorAll(".chart p")
 const graph = document.querySelectorAll(".graph")
+const values = document.querySelectorAll(".graph span")
 quantidade = []
+
+lista.forEach((e, i) => {
+    values[i].innerHTML = "$" + e.amount
+})
 
 graph[day].style.backgroundColor = "#76b5bc"
 
